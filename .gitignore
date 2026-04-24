@@ -1,0 +1,12 @@
+<<<<<<< HEAD
+/vendor
+*.log
+.DS_Store
+.idea/
+.vscode/
+=======
+*log
+.DS_Store
+.idea/
+.vsCode/
+>>>>>>> c2fdc1f (chore: initialize project structure)
