@@ -4,6 +4,13 @@ require_once __DIR__ . '/src/Product.php';
 require_once __DIR__ . '/src/Cart.php';
 require_once __DIR__ . '/src/Display.php';
 require_once __DIR__ . '/src/MenuHandler.php';
-class MAIN_MENU {
 
+
+try {
+    $milk = new Product('Milk', 89.9, 1);
+} catch (InvalidArgumentException $e) {
+    echo $e->getMessage() . "\n";
 }
+
+echo $milk->name;
+
