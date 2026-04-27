@@ -22,19 +22,20 @@ class Product
         }
     }
 
-    public function getQuality()
+    public function getQuantity(): int
     {
-        
+       return $this->quantity;
     }
 
-    public function IncreasQuality()
+    public function increaseQuantity(): void
     {
-
+        $this->quantity++;
     }
 
-    public function getTotal()
+    public function getTotal(): float
     {
-
+        $total = $this->quantity * $this->price;
+        return $total;
     }
 
 }
