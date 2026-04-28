@@ -84,7 +84,6 @@ class Cart
         }
 
         return $discountSubtotal;
-        var_dump($discountSubtotal);
     }
 
 
@@ -102,7 +101,7 @@ class Cart
     public function getTotal(): float
     {   
         $getTotal = $this->getSubtotal() - $this->getDiscountAmount();
-        echo "Всего:  $getTotal";
+       // echo "Итог со скидкой:" . $getTotal;
         return $getTotal;
     }  
 }   
