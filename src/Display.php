@@ -14,7 +14,6 @@ class Display {
         foreach(self::MAINMENU as $key => $menuOption) {
             echo $key+1 . "." . $menuOption . "\n";
         }
-
     }   
 
     public function printCart(Cart $cart): void
@@ -50,11 +49,11 @@ class Display {
 
     public function printDiscointProgress(Cart $cart)
     {
-        $discountinprogress = 0;
-        if($cart->getSubtotal() < Cart::DISCOUNT_THRESHOLD) {
-            $discountinprogress = Cart::DISCOUNT_THRESHOLD - $cart->getSubtotal();
+        $discountInProgress = 0;
+        if ($cart->getSubtotal() < Cart::DISCOUNT_THRESHOLD) {
+            $discountInProgress = Cart::DISCOUNT_THRESHOLD - $cart->getSubtotal();
         }
-        echo "До скидки не хватает: " . $discountinprogress . "\n";
+        echo "До скидки не хватает: " . $discountInProgress . "\n";
     }
 
     public function printSuccess(string $message): void

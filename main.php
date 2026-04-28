@@ -32,8 +32,7 @@ var_dump($cart->getTotal());
 var_dump($display->printCart($cart));
 var_dump($display->printReceipt($cart));
 var_dump($display->printDiscointProgress($cart));
-//var_dump($display->printSuccess($message));
-//var_dump($display->printError($message));
+
 try{
     $cart->removeProduct($motherFucker);
     $display->printSuccess("Успешно удалено");
