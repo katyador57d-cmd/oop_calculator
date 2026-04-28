@@ -15,7 +15,7 @@ class Display {
             echo $key+1 . "." . $menuOption . "\n";
         }
 
-    }
+    }   
 
     public function printCart(Cart $cart): void
     {
