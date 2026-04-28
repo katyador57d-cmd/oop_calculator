@@ -60,18 +60,15 @@ class Cart
                 return $key;
             }
         }
-
         return -1;
     }
 
     public function getSubtotal(): float
     {
         $subtotal = 0;
-
         foreach ($this->getProducts() as $product) {
             $subtotal += $product->getTotal();
         }
-        
         return $subtotal;
     }
 

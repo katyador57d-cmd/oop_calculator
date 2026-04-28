@@ -53,7 +53,8 @@ class Display {
         $discountinprogress = 0;
         if($cart->getSubtotal() < Cart::DISCOUNT_THRESHOLD) {
             $discountinprogress = Cart::DISCOUNT_THRESHOLD - $cart->getSubtotal();
-        } echo "До скидки не хватает: " . $discountinprogress . "\n";
+        }
+        echo "До скидки не хватает: " . $discountinprogress . "\n";
     }
 
     public function printSuccess(string $message): void
