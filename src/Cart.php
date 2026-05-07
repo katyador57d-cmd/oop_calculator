@@ -18,7 +18,7 @@ class Cart
     {
         foreach ($this->products as $product) {
             if ($product->name === $newProduct->name) {
-                $product->increaseQuantity();
+                $product->increaseQuantity($newProduct->getQuantity());
                 return;
             }
         }
