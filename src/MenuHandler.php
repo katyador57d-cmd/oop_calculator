@@ -90,3 +90,4 @@ class Menu {
         $this->display->printReceipt($this->cart);
     }
 }
+echo "lalala";
