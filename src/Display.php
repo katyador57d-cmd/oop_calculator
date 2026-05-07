@@ -66,4 +66,6 @@ class Display {
         echo "Ошибка: " . $message . "\n";
     }
 
+    
+
 }
