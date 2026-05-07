@@ -7,7 +7,7 @@ require_once __DIR__ . '/src/MenuHandler.php';
 
 $display = new Display();
 
-$milk = null;
+/*$milk = null;
 $motherFucker = null;
 try {
     $milk = new Product('Milk', 89.9, 1);
@@ -17,13 +17,12 @@ try {
     $display->printError($e->getMessage());
 }
 
-
+*/
 $cart = new Cart();
-$cart->addProduct($milk);
-$cart->addProduct($motherFucker);
-echo $milk->getQuantity() . "\n";
 
-$cart->addProduct($milk);
+//echo $milk->getQuantity() . "\n";
+
+/*$cart->addProduct($milk);
 echo $milk->getQuantity() . "\n";
 
 echo count($cart->getProducts()) . "\n";
@@ -45,5 +44,6 @@ try{
 
 var_dump($cart->getSubtotal());
 
+*/
 $menu = new Menu($cart, $display);
 $menu->run();
