@@ -60,18 +60,15 @@ class Cart
                 return $key;
             }
         }
-
         return -1;
     }
 
     public function getSubtotal(): float
     {
         $subtotal = 0;
-
         foreach ($this->getProducts() as $product) {
             $subtotal += $product->getTotal();
         }
-        
         return $subtotal;
     }
 
@@ -84,7 +81,6 @@ class Cart
         }
 
         return $discountSubtotal;
-        var_dump($discountSubtotal);
     }
 
 
@@ -102,7 +98,6 @@ class Cart
     public function getTotal(): float
     {   
         $getTotal = $this->getSubtotal() - $this->getDiscountAmount();
-        echo "Всего:  $getTotal";
         return $getTotal;
     }  
 }   
